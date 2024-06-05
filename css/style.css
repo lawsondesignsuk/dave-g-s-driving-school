@@ -1,0 +1,260 @@
+/* Reset and common styles */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+h1 {
+    line-height: 1.5em;
+    font-weight: bolder;
+}
+
+h2 {
+    line-height: 1.5em;
+}
+
+p {
+    line-height: 1.8em;
+}
+
+div#divider {
+    padding: 25px;
+}
+
+/* Reset and common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #89CFF0;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.phone-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.school-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* Cover container */
+div#cover-container {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background: linear-gradient(90deg, #89CFF0 0%, #0072B5 100%);
+    color: white;
+}
+
+/* Content container */
+div#container {
+    background-color: white;
+}
+
+div#container-2 {
+    background-color: aliceblue;
+}
+
+div#cover-container div#content,
+div#content {
+    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+}
+div#content{
+    text-align: center;
+}
+div#cover-container div#content{
+    text-align: left;
+}
+
+div#cover-container button{
+    margin: 0;
+}
+
+/* Button styles */
+button {
+    padding: 15px 32px;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    font-weight: bold;
+    background-color: red;
+    border: none;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a{
+    text-decoration: none;
+}
+
+/* Image styles */
+div#content img,
+div#gallery-image-container img {
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+div#container-2 img{
+    border-radius: 0;
+}
+
+/* Pricing section styles */
+div#pricing-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+div#pricing-section ul,
+li {
+    list-style: none;
+    padding-left: 0;
+}
+
+div#pricing-section h2 {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+p.price {
+    color: red;
+    font-weight: bold;
+}
+
+/* Gallery section styles */
+div#gallery-image-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+div#gallery-image-container img {
+    height: auto;
+    width: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+div#gallery-image-container img:hover {
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+/* Footer styles */
+footer {
+    background-color: #89CFF0;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-info,
+.footer-links {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.bottom-footer {
+    padding: 10px 0;
+}
+
+.bottom-footer p {
+    text-align: center;
+}
+
+.container a {
+    color: black;
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+    .footer-info,
+    .footer-links {
+        width: 45%;
+    }
+}
